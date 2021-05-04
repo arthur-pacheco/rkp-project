@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages = { "b2w.controller", "b2w.model", "b2w.spring.config", "b2w.view"},
                 excludeFilters = @ComponentScan.Filter(classes = {
                 SpringConfig.class }, type = FilterType.ASSIGNABLE_TYPE))
-@PropertySource(value = {"file:/home/arthur/projects/rskp-b2w/src/main/resources/spring-test.properties"})
+@PropertySource(value = {"classpath:spring-test.properties"})
 public class TestConfig {
 
     /**

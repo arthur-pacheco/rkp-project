@@ -12,7 +12,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @ComponentScan(basePackages = {"b2w.controller, b2w.model, b2w.spring.config, b2w.view"})
-@PropertySource(value = {"file:/home/arthur/projects/rskp-b2w/src/main/resources/spring.properties"})
+@PropertySource(value = {"classpath:spring.properties"})
 public class SpringConfig {
 
     /**
